@@ -135,7 +135,7 @@ namespace MP3Sharp {
         /// Gets the number of channels available in the audio being decoded. Updated every call to Read() or DecodeFrames(),
         /// to reflect the most recent header information from the MP3 Stream.
         /// </summary>
-        internal short ChannelCount => _ChannelCountRep;
+        public short ChannelCount => _ChannelCountRep;
 
         /// <summary>
         /// Gets the PCM output format of this stream.
